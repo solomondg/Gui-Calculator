@@ -34,3 +34,4 @@ class Main:
         print "That operator is only known to the Aztecs. Please consult them for the correct answer"
       if self.bad_op_responce == 5:
         print "Please do not use whatever strange alien operator you are using, and only use +, -, *, /, and %"
+      print str(self.answer)
