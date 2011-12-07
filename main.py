@@ -1,44 +1,36 @@
 import math
 import random
 
-num1 = 0
-num2 = 0
-op = 0
-answer = 0
-
-class input:
-  """handles inputes."""
+class Main:
+  """handles inputes and evaluates the problem."""
   def __init__(self):
-    num1 = 0
-    num2 = 0
-    op = ''
-    num1 = exec(input("enter a number: "))
-    num2 = exec(input("enter another number: "))
-    op = exec(input("enter an operator"))
-
-class eval:
-  """evaluates the numbers"""
-  def __init__(self):
+    self.answer = 0
+    self.num1 = 0
+    self.num2 = 0
+    self.op = ''
+    self.num1 = exec(input("enter a number: "))
+    self.num2 = exec(input("enter another number: "))
+    self.op = exec(input("enter an operator"))
     self.bad_op_responce = 0
-    if op == '+':
-      answer = num1 + num2
-    elif op == '-':
-      answer = num1 - num2
-    elif op == '*' || 'x' || 'X':
-      answer = num1 * num2
-    elif op == '/' || '÷':
-      answer = num1 / num2
-    elif op == '%':
-      answer = num1 % num2
+    if self.op == '+':
+      self.answer = self.num1 + self.num2
+    elif self.op == '-':
+      self.answer = self.num1 - self.num2
+    elif self.op == '*' || 'x' || 'X':
+      self.answer = self.num1 * self.num2
+    elif self.op == '/' || '÷':
+      self.answer = self.num1 / self.num2
+    elif self.op == '%':
+      self.answer = self.num1 % self.num2
     else:
-      bad_op_responce = random.randint(1, 5)
-      if bad_op_responce == 1:
+      self.bad_op_responce = random.randint(1, 5)
+      if self.bad_op_responce == 1:
         print "Please input a number taught in elementry school."
-      if bad_op_responce == 2:
+      if self.bad_op_responce == 2:
         print "error.... error.... operator not found in memory banks. shutting down.......... \n \n *bzzzt*"
-      if bad_op_responce == 3:
+      if self.bad_op_responce == 3:
         print "Really? this is a CALCULATOR, not a AI! How is it expected to know every single operator in THE WHOLE FLIPPING WORLD?"
-      if bad_op_responce == 4:
+      if self.bad_op_responce == 4:
         print "That operator is only known to the Aztecs. Please consult them for the correct answer"
-      if bad_op_responce == 5:
+      if self.bad_op_responce == 5:
         print "Please do not use whatever strange alien operator you are using, and only use +, -, *, /, and %"
