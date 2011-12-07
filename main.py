@@ -6,9 +6,16 @@ op = 0
 answer = 0
 
 class input:
-  """main class"""
+  """handles inputes."""
   def __init__(self):
     num1 = 0
     num2 = 0
     op = ''
-    num1 = raw_input
+    num1 = exec(input("enter a number: "))
+    num2 = exec(input("enter another number: "))
+    op = exec(input("enter an operator"))
+
+class eval:
+  """evaluates the numbers"""
+  def __init__(self):
+    if op == '
