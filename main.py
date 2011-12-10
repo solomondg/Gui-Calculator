@@ -4,14 +4,9 @@ import random
 class Main:
   """handles inputes and evaluates the problem."""
   def __init__(self):
-    self.answer = 0
-    self.num1 = 0
-    self.num2 = 0
-    self.op = ''
     self.num1 = exec(input("enter a number: "))
     self.num2 = exec(input("enter another number: "))
     self.op = exec(input("enter an operator"))
-    self.bad_op_responce = 0
     if self.op == '+':
       self.answer = self.num1 + self.num2
     elif self.op == '-':
