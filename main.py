@@ -20,7 +20,7 @@ class Main:
     else:
       self.bad_op_responce = random.randint(1, 5)
       if self.bad_op_responce == 1:
-        print "Please input a number taught in elementry school."
+        print "That operator was lost with the dinosoars."
       if self.bad_op_responce == 2:
         print "error.... error.... operator not found in memory banks. shutting down.......... \n \n *bzzzt*"
       if self.bad_op_responce == 3:
@@ -28,5 +28,5 @@ class Main:
       if self.bad_op_responce == 4:
         print "That operator is only known to the Aztecs. Please consult them for the correct answer"
       if self.bad_op_responce == 5:
-        print "Please do not use whatever strange alien operator you are using, and only use +, -, *, /, and %"
+        print "Please do not use whatever alien operator you are using, and only use +, -, *, /, and %"
       print str(self.answer)
